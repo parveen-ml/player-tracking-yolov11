@@ -1,21 +1,28 @@
-# Player Tracking and Re-identification using YOLOv11
+# 🧠 Player Tracking and Re-identification using YOLOv11
 
-This project tracks and re-identifies players in a football video using a fine-tuned YOLOv11 model. It ensures players who leave and re-enter the frame are assigned consistent identities.
+This project focuses on tracking and re-identifying football players in a video using a fine-tuned **YOLOv11** model. It ensures that players who leave and re-enter the frame retain consistent identities.
+
+---
 
 ## 📁 Files Required
 
-- [`best.pt`](https://drive.google.com/file/d/1YABlQYon_EkCw10Sl08BfpBO4YUr_FZj/view?usp=drive_link): YOLOv11 model (stored on Google Drive)
-- `15sec_input_720p.mp4`: Input video
-- `player_tracking.ipynb`: Jupyter notebook file
-- `requirements.txt`: Dependency list
+- [`best.pt`](https://drive.google.com/file/d/1YABlQYon_EkCw10Sl08BfpBO4YUr_FZj/view?usp=drive_link): Fine-tuned YOLOv11 model (Google Drive)
+- `15sec_input_720p.mp4`: Input video file
+- `player_tracking.ipynb`: Jupyter Notebook for running the model
+- `requirements.txt`: List of Python dependencies
 
-## ⚙️ Set Up Environment
+---
 
+## ⚙️ Environment Setup
+
+```bash
+# Create a virtual environment
 python -m venv venv
-source venv/bin/activate # On Windows: venv\\Scripts\\activate
+
+# Activate the environment
+source venv/bin/activate      # For macOS/Linux
+venv\Scripts\activate         # For Windows
+
+# Install dependencies
 pip install -r requirements.txt
-
-📓 Run Notebook
-Open player_tracking_yolo11.ipynb using VS Code or Jupyter Lab.
-
-Run all cells to process video and see player tracking output.
+```
